@@ -1,5 +1,5 @@
 _build/nrf52832_xxaa/SEGGER_RTT_printf.c.o: \
- ../../../nRF5_SDK_15.3.0_59ac345//external/segger_rtt/SEGGER_RTT_printf.c \
+ ../nRF_Segger_RTT/SEGGER_RTT_printf.c \
  ../../../nRF5_SDK_15.3.0_59ac345//external/segger_rtt/SEGGER_RTT.h \
  ../../../nRF5_SDK_15.3.0_59ac345//external/segger_rtt/SEGGER_RTT_Conf.h \
  ../../../nRF5_SDK_15.3.0_59ac345//components/libraries/util/nordic_common.h \
@@ -39,8 +39,9 @@ _build/nrf52832_xxaa/SEGGER_RTT_printf.c.o: \
  ../../../nRF5_SDK_15.3.0_59ac345//components/drivers_nrf/nrf_soc_nosd/nrf_error.h \
  ../../../nRF5_SDK_15.3.0_59ac345//components/libraries/util/nordic_common.h \
  ../../../nRF5_SDK_15.3.0_59ac345//components/libraries/util/app_error_weak.h \
- ../config/sdk_config.h /usr/include/newlib/stdlib.h \
- /usr/include/newlib/machine/stdlib.h
+ ../config/sdk_config.h \
+ ../../../nRF5_SDK_15.3.0_59ac345//external/segger_rtt/SEGGER_RTT_Conf.h \
+ /usr/include/newlib/stdlib.h /usr/include/newlib/machine/stdlib.h
 
 ../../../nRF5_SDK_15.3.0_59ac345//external/segger_rtt/SEGGER_RTT.h:
 
@@ -139,6 +140,8 @@ _build/nrf52832_xxaa/SEGGER_RTT_printf.c.o: \
 ../../../nRF5_SDK_15.3.0_59ac345//components/libraries/util/app_error_weak.h:
 
 ../config/sdk_config.h:
+
+../../../nRF5_SDK_15.3.0_59ac345//external/segger_rtt/SEGGER_RTT_Conf.h:
 
 /usr/include/newlib/stdlib.h:
 

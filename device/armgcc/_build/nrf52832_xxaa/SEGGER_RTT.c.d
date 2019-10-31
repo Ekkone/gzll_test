@@ -1,5 +1,4 @@
-_build/nrf52832_xxaa/SEGGER_RTT.c.o: \
- ../../../nRF5_SDK_15.3.0_59ac345//external/segger_rtt/SEGGER_RTT.c \
+_build/nrf52832_xxaa/SEGGER_RTT.c.o: ../nRF_Segger_RTT/SEGGER_RTT.c \
  ../../../nRF5_SDK_15.3.0_59ac345//external/segger_rtt/SEGGER_RTT.h \
  ../../../nRF5_SDK_15.3.0_59ac345//external/segger_rtt/SEGGER_RTT_Conf.h \
  ../../../nRF5_SDK_15.3.0_59ac345//components/libraries/util/nordic_common.h \

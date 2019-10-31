@@ -1,5 +1,4 @@
-_build/nrf52832_xxaa/boards.c.o: \
- ../../../nRF5_SDK_15.3.0_59ac345//components/boards/boards.c \
+_build/nrf52832_xxaa/boards.c.o: ../BoardDefinition/boards.c \
  ../../../nRF5_SDK_15.3.0_59ac345//components/boards/boards.h \
  ../../../nRF5_SDK_15.3.0_59ac345//modules/nrfx/hal/nrf_gpio.h \
  ../../../nRF5_SDK_15.3.0_59ac345//modules/nrfx/nrfx.h \

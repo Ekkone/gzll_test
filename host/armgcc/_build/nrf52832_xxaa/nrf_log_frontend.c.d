@@ -1,5 +1,4 @@
-_build/nrf52832_xxaa/nrf_log_frontend.c.o: \
- ../../../nRF5_SDK_15.3.0_59ac345//components/libraries/log/src/nrf_log_frontend.c \
+_build/nrf52832_xxaa/nrf_log_frontend.c.o: ../nRF_Log/nrf_log_frontend.c \
  ../../../nRF5_SDK_15.3.0_59ac345//components/libraries/util/sdk_common.h \
  /usr/lib/gcc/arm-none-eabi/7.3.1/include/stdint.h \
  /usr/include/newlib/stdint.h \
@@ -52,7 +51,6 @@ _build/nrf52832_xxaa/nrf_log_frontend.c.o: \
  ../../../nRF5_SDK_15.3.0_59ac345//components/libraries/log/nrf_log_instance.h \
  ../../../nRF5_SDK_15.3.0_59ac345//components/libraries/log/nrf_log_types.h \
  ../../../nRF5_SDK_15.3.0_59ac345//components/libraries/log/nrf_log_types.h \
- ../../../nRF5_SDK_15.3.0_59ac345//components/libraries/log/src/nrf_log_internal.h \
  ../../../nRF5_SDK_15.3.0_59ac345//components/libraries/log/nrf_log_ctrl.h \
  ../../../nRF5_SDK_15.3.0_59ac345//components/libraries/log/src/nrf_log_ctrl_internal.h \
  ../../../nRF5_SDK_15.3.0_59ac345//components/libraries/log/nrf_log_backend_interface.h \
@@ -189,8 +187,6 @@ _build/nrf52832_xxaa/nrf_log_frontend.c.o: \
 ../../../nRF5_SDK_15.3.0_59ac345//components/libraries/log/nrf_log_types.h:
 
 ../../../nRF5_SDK_15.3.0_59ac345//components/libraries/log/nrf_log_types.h:
-
-../../../nRF5_SDK_15.3.0_59ac345//components/libraries/log/src/nrf_log_internal.h:
 
 ../../../nRF5_SDK_15.3.0_59ac345//components/libraries/log/nrf_log_ctrl.h:
 

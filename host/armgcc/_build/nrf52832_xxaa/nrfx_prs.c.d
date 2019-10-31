@@ -1,5 +1,4 @@
-_build/nrf52832_xxaa/nrfx_prs.c.o: \
- ../../../nRF5_SDK_15.3.0_59ac345//modules/nrfx/drivers/src/prs/nrfx_prs.c \
+_build/nrf52832_xxaa/nrfx_prs.c.o: ../nRF_Drivers/nrfx_prs.c \
  ../../../nRF5_SDK_15.3.0_59ac345//modules/nrfx/nrfx.h \
  ../../../nRF5_SDK_15.3.0_59ac345//integration/nrfx/nrfx_config.h \
  ../config/sdk_config.h \

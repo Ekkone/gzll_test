@@ -1,5 +1,4 @@
-_build/nrf52832_xxaa/system_nrf52.c.o: \
- ../../../nRF5_SDK_15.3.0_59ac345//modules/nrfx/mdk/system_nrf52.c \
+_build/nrf52832_xxaa/system_nrf52.c.o: ../Start/system_nrf52.c \
  /usr/lib/gcc/arm-none-eabi/7.3.1/include/stdint.h \
  /usr/include/newlib/stdint.h \
  /usr/include/newlib/machine/_default_types.h \
@@ -17,7 +16,8 @@ _build/nrf52832_xxaa/system_nrf52.c.o: \
  ../../../nRF5_SDK_15.3.0_59ac345//modules/nrfx/mdk/nrf52_bitfields.h \
  ../../../nRF5_SDK_15.3.0_59ac345//modules/nrfx/mdk/nrf51_to_nrf52.h \
  ../../../nRF5_SDK_15.3.0_59ac345//modules/nrfx/mdk/nrf52_name_change.h \
- ../../../nRF5_SDK_15.3.0_59ac345//modules/nrfx/mdk/compiler_abstraction.h
+ ../../../nRF5_SDK_15.3.0_59ac345//modules/nrfx/mdk/compiler_abstraction.h \
+ ../../../nRF5_SDK_15.3.0_59ac345//modules/nrfx/mdk/system_nrf52.h
 
 /usr/lib/gcc/arm-none-eabi/7.3.1/include/stdint.h:
 
@@ -58,3 +58,5 @@ _build/nrf52832_xxaa/system_nrf52.c.o: \
 ../../../nRF5_SDK_15.3.0_59ac345//modules/nrfx/mdk/nrf52_name_change.h:
 
 ../../../nRF5_SDK_15.3.0_59ac345//modules/nrfx/mdk/compiler_abstraction.h:
+
+../../../nRF5_SDK_15.3.0_59ac345//modules/nrfx/mdk/system_nrf52.h:

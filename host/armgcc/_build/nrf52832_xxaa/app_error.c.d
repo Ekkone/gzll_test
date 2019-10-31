@@ -1,5 +1,4 @@
-_build/nrf52832_xxaa/app_error.c.o: \
- ../../../nRF5_SDK_15.3.0_59ac345//components/libraries/util/app_error.c \
+_build/nrf52832_xxaa/app_error.c.o: ../nRF_Libraries/app_error.c \
  ../../../nRF5_SDK_15.3.0_59ac345//modules/nrfx/mdk/nrf.h \
  ../../../nRF5_SDK_15.3.0_59ac345//modules/nrfx/mdk/nrf52.h \
  ../../../nRF5_SDK_15.3.0_59ac345//components/toolchain/cmsis/include/core_cm4.h \
@@ -32,7 +31,9 @@ _build/nrf52832_xxaa/app_error.c.o: \
  ../../../nRF5_SDK_15.3.0_59ac345//components/libraries/util/sdk_errors.h \
  ../../../nRF5_SDK_15.3.0_59ac345//components/drivers_nrf/nrf_soc_nosd/nrf_error.h \
  ../../../nRF5_SDK_15.3.0_59ac345//components/libraries/util/nordic_common.h \
- ../../../nRF5_SDK_15.3.0_59ac345//components/libraries/util/app_error_weak.h
+ ../../../nRF5_SDK_15.3.0_59ac345//components/libraries/util/app_error_weak.h \
+ ../../../nRF5_SDK_15.3.0_59ac345//components/libraries/util/nordic_common.h \
+ ../../../nRF5_SDK_15.3.0_59ac345//components/libraries/util/sdk_errors.h
 
 ../../../nRF5_SDK_15.3.0_59ac345//modules/nrfx/mdk/nrf.h:
 
@@ -117,3 +118,7 @@ _build/nrf52832_xxaa/app_error.c.o: \
 ../../../nRF5_SDK_15.3.0_59ac345//components/libraries/util/nordic_common.h:
 
 ../../../nRF5_SDK_15.3.0_59ac345//components/libraries/util/app_error_weak.h:
+
+../../../nRF5_SDK_15.3.0_59ac345//components/libraries/util/nordic_common.h:
+
+../../../nRF5_SDK_15.3.0_59ac345//components/libraries/util/sdk_errors.h:

@@ -1,5 +1,4 @@
-_build/nrf52832_xxaa/nrfx_atomic.c.o: \
- ../../../nRF5_SDK_15.3.0_59ac345//modules/nrfx/soc/nrfx_atomic.c \
+_build/nrf52832_xxaa/nrfx_atomic.c.o: ../nRF_Drivers/nrfx_atomic.c \
  ../../../nRF5_SDK_15.3.0_59ac345//modules/nrfx/soc/nrfx_atomic.h \
  ../../../nRF5_SDK_15.3.0_59ac345//modules/nrfx/nrfx.h \
  ../../../nRF5_SDK_15.3.0_59ac345//integration/nrfx/nrfx_config.h \

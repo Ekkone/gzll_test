@@ -1,5 +1,4 @@
-_build/nrf52832_xxaa/app_timer.c.o: \
- ../../../nRF5_SDK_15.3.0_59ac345//components/libraries/timer/app_timer.c \
+_build/nrf52832_xxaa/app_timer.c.o: ../nRF_Libraries/app_timer.c \
  ../../../nRF5_SDK_15.3.0_59ac345//components/libraries/util/sdk_common.h \
  /usr/lib/gcc/arm-none-eabi/7.3.1/include/stdint.h \
  /usr/include/newlib/stdint.h \

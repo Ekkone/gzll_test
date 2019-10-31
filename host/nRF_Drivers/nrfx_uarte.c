@@ -1,3 +1,9 @@
+/*
+ * @Author: Ekko
+ * @Date: 2019-10-31 17:11:55
+ * @LastEditTime: 2019-10-31 17:11:56
+ * @Description: 
+ */
 /**
  * Copyright (c) 2015 - 2019, Nordic Semiconductor ASA
  *
@@ -50,7 +56,7 @@
 #endif
 
 #include <nrfx_uarte.h>
-#include "prs/nrfx_prs.h"
+#include "nrfx_prs.h"
 #include <hal/nrf_gpio.h>
 
 #define NRFX_LOG_MODULE UARTE

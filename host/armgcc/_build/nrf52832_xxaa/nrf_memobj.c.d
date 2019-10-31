@@ -1,5 +1,4 @@
-_build/nrf52832_xxaa/nrf_memobj.c.o: \
- ../../../nRF5_SDK_15.3.0_59ac345//components/libraries/memobj/nrf_memobj.c \
+_build/nrf52832_xxaa/nrf_memobj.c.o: ../nRF_Libraries/nrf_memobj.c \
  ../../../nRF5_SDK_15.3.0_59ac345//components/libraries/memobj/nrf_memobj.h \
  /usr/lib/gcc/arm-none-eabi/7.3.1/include/stdint.h \
  /usr/include/newlib/stdint.h \

@@ -1,5 +1,5 @@
 _build/nrf52832_xxaa/nrf_fprintf_format.c.o: \
- ../../../nRF5_SDK_15.3.0_59ac345//external/fprintf/nrf_fprintf_format.c \
+ ../nRF_Libraries/nrf_fprintf_format.c \
  ../../../nRF5_SDK_15.3.0_59ac345//components/libraries/util/sdk_common.h \
  /usr/lib/gcc/arm-none-eabi/7.3.1/include/stdint.h \
  /usr/include/newlib/stdint.h \
@@ -38,7 +38,8 @@ _build/nrf52832_xxaa/nrf_fprintf_format.c.o: \
  /usr/lib/gcc/arm-none-eabi/7.3.1/include/stdarg.h \
  ../../../nRF5_SDK_15.3.0_59ac345//components/libraries/util/nrf_assert.h \
  ../../../nRF5_SDK_15.3.0_59ac345//external/fprintf/nrf_fprintf.h \
- ../../../nRF5_SDK_15.3.0_59ac345//external/fprintf/nrf_fprintf_format.h
+ ../../../nRF5_SDK_15.3.0_59ac345//external/fprintf/nrf_fprintf_format.h \
+ ../../../nRF5_SDK_15.3.0_59ac345//external/fprintf/nrf_fprintf.h
 
 ../../../nRF5_SDK_15.3.0_59ac345//components/libraries/util/sdk_common.h:
 
@@ -133,3 +134,5 @@ _build/nrf52832_xxaa/nrf_fprintf_format.c.o: \
 ../../../nRF5_SDK_15.3.0_59ac345//external/fprintf/nrf_fprintf.h:
 
 ../../../nRF5_SDK_15.3.0_59ac345//external/fprintf/nrf_fprintf_format.h:
+
+../../../nRF5_SDK_15.3.0_59ac345//external/fprintf/nrf_fprintf.h:

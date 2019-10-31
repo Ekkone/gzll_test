@@ -1,5 +1,4 @@
-_build/nrf52832_xxaa/nrfx_uarte.c.o: \
- ../../../nRF5_SDK_15.3.0_59ac345//modules/nrfx/drivers/src/nrfx_uarte.c \
+_build/nrf52832_xxaa/nrfx_uarte.c.o: ../nRF_Drivers/nrfx_uarte.c \
  ../../../nRF5_SDK_15.3.0_59ac345//modules/nrfx/nrfx.h \
  ../../../nRF5_SDK_15.3.0_59ac345//integration/nrfx/nrfx_config.h \
  ../config/sdk_config.h \

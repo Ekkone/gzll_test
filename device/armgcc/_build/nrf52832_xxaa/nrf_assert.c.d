@@ -1,5 +1,4 @@
-_build/nrf52832_xxaa/nrf_assert.c.o: \
- ../../../nRF5_SDK_15.3.0_59ac345//components/libraries/util/nrf_assert.c \
+_build/nrf52832_xxaa/nrf_assert.c.o: ../nRF_Libraries/nrf_assert.c \
  ../../../nRF5_SDK_15.3.0_59ac345//components/libraries/util/nrf_assert.h \
  /usr/lib/gcc/arm-none-eabi/7.3.1/include/stdint.h \
  /usr/include/newlib/stdint.h \
@@ -33,7 +32,8 @@ _build/nrf52832_xxaa/nrf_assert.c.o: \
  ../../../nRF5_SDK_15.3.0_59ac345//components/libraries/util/sdk_errors.h \
  ../../../nRF5_SDK_15.3.0_59ac345//components/drivers_nrf/nrf_soc_nosd/nrf_error.h \
  ../../../nRF5_SDK_15.3.0_59ac345//components/libraries/util/nordic_common.h \
- ../../../nRF5_SDK_15.3.0_59ac345//components/libraries/util/app_error_weak.h
+ ../../../nRF5_SDK_15.3.0_59ac345//components/libraries/util/app_error_weak.h \
+ ../../../nRF5_SDK_15.3.0_59ac345//components/libraries/util/nordic_common.h
 
 ../../../nRF5_SDK_15.3.0_59ac345//components/libraries/util/nrf_assert.h:
 
@@ -120,3 +120,5 @@ _build/nrf52832_xxaa/nrf_assert.c.o: \
 ../../../nRF5_SDK_15.3.0_59ac345//components/libraries/util/nordic_common.h:
 
 ../../../nRF5_SDK_15.3.0_59ac345//components/libraries/util/app_error_weak.h:
+
+../../../nRF5_SDK_15.3.0_59ac345//components/libraries/util/nordic_common.h:

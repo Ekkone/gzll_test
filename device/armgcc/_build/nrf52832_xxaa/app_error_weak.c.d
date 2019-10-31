@@ -1,5 +1,5 @@
 _build/nrf52832_xxaa/app_error_weak.c.o: \
- ../../../nRF5_SDK_15.3.0_59ac345//components/libraries/util/app_error_weak.c \
+ ../nRF_Libraries/app_error_weak.c \
  ../../../nRF5_SDK_15.3.0_59ac345//components/libraries/util/app_error.h \
  /usr/lib/gcc/arm-none-eabi/7.3.1/include/stdint.h \
  /usr/include/newlib/stdint.h \
@@ -58,7 +58,7 @@ _build/nrf52832_xxaa/app_error_weak.c.o: \
  /usr/include/newlib/stdlib.h /usr/include/newlib/machine/stdlib.h \
  ../../../nRF5_SDK_15.3.0_59ac345//components/libraries/balloc/nrf_balloc.h \
  ../../../nRF5_SDK_15.3.0_59ac345//components/libraries/util/app_util_platform.h \
- ../../../nRF5_SDK_15.3.0_59ac345//components/libraries/util/app_util_platform.h
+ ../../../nRF5_SDK_15.3.0_59ac345//components/libraries/util/app_error.h
 
 ../../../nRF5_SDK_15.3.0_59ac345//components/libraries/util/app_error.h:
 
@@ -198,4 +198,4 @@ _build/nrf52832_xxaa/app_error_weak.c.o: \
 
 ../../../nRF5_SDK_15.3.0_59ac345//components/libraries/util/app_util_platform.h:
 
-../../../nRF5_SDK_15.3.0_59ac345//components/libraries/util/app_util_platform.h:
+../../../nRF5_SDK_15.3.0_59ac345//components/libraries/util/app_error.h:

@@ -1,5 +1,5 @@
 _build/nrf52832_xxaa/nrf_log_str_formatter.c.o: \
- ../../../nRF5_SDK_15.3.0_59ac345//components/libraries/log/src/nrf_log_str_formatter.c \
+ ../nRF_Log/nrf_log_str_formatter.c \
  ../../../nRF5_SDK_15.3.0_59ac345//components/libraries/util/sdk_common.h \
  /usr/lib/gcc/arm-none-eabi/7.3.1/include/stdint.h \
  /usr/include/newlib/stdint.h \

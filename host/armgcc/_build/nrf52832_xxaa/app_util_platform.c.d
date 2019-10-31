@@ -1,5 +1,5 @@
 _build/nrf52832_xxaa/app_util_platform.c.o: \
- ../../../nRF5_SDK_15.3.0_59ac345//components/libraries/util/app_util_platform.c \
+ ../nRF_Libraries/app_util_platform.c \
  ../../../nRF5_SDK_15.3.0_59ac345//components/libraries/util/app_util_platform.h \
  /usr/lib/gcc/arm-none-eabi/7.3.1/include/stdint.h \
  /usr/include/newlib/stdint.h \
