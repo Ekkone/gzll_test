@@ -15,7 +15,14 @@
   <ProjectSessionItem path="gzll_ack_payload_device_pca10040;gzll_ack_payload_device_pca10040"/>
   <ProjectSessionItem path="gzll_ack_payload_device_pca10040;gzll_ack_payload_device_pca10040;Application"/>
   <ProjectSessionItem path="gzll_ack_payload_device_pca10040;gzll_ack_payload_device_pca10040;Board Definition"/>
+  <ProjectSessionItem path="gzll_ack_payload_device_pca10040;gzll_ack_payload_device_pca10040;Board Support"/>
+  <ProjectSessionItem path="gzll_ack_payload_device_pca10040;gzll_ack_payload_device_pca10040;None"/>
   <ProjectSessionItem path="gzll_ack_payload_device_pca10040;gzll_ack_payload_device_pca10040;nRF_Drivers"/>
+  <ProjectSessionItem path="gzll_ack_payload_device_pca10040;gzll_ack_payload_device_pca10040;nRF_Libraries"/>
+  <ProjectSessionItem path="gzll_ack_payload_device_pca10040;gzll_ack_payload_device_pca10040;nRF_Log"/>
+  <ProjectSessionItem path="gzll_ack_payload_device_pca10040;gzll_ack_payload_device_pca10040;nRF_Properitary_RF"/>
+  <ProjectSessionItem path="gzll_ack_payload_device_pca10040;gzll_ack_payload_device_pca10040;nRF_Segger_RTT"/>
+  <ProjectSessionItem path="gzll_ack_payload_device_pca10040;gzll_ack_payload_device_pca10040;Segger Startup Files"/>
  </Project>
  <Register1/>
  <Register2/>
@@ -39,13 +46,6 @@
  <Watch4>
   <Watches active="0" update="Never"/>
  </Watch4>
- <Files>
-  <SessionOpenFile windowGroup="DockEditLeft" x="0" y="109" useTextEdit="1" useBinaryEdit="0" left="0" path="../../../main.c" selected="0" top="105" codecName="Default"/>
-  <SessionOpenFile windowGroup="DockEditLeft" x="0" y="58" useTextEdit="1" useBinaryEdit="0" left="0" path="../../../../../../../../../nrf52832_test/main.c" selected="0" top="56" codecName="Default"/>
-  <SessionOpenFile windowGroup="DockEditLeft" x="0" y="0" useTextEdit="1" useBinaryEdit="0" left="0" path="../../../../../../../../components/boards/boards.c" selected="0" top="21" codecName="Default"/>
-  <SessionOpenFile windowGroup="DockEditLeft" x="0" y="40" useTextEdit="1" useBinaryEdit="0" left="0" path="../../../../../../../../modules/nrfx/drivers/src/nrfx_uart.c" selected="0" top="24" codecName="Default"/>
-  <SessionOpenFile windowGroup="DockEditLeft" x="0" y="0" useTextEdit="1" useBinaryEdit="0" left="0" path="../../../../../../../../components/libraries/bsp/bsp.h" selected="0" top="36" codecName="Default"/>
-  <SessionOpenFile windowGroup="DockEditLeft" x="0" y="0" useTextEdit="1" useBinaryEdit="0" left="0" path="../../../../../../../../../../../.segger/SEGGER Embedded Studio/v3/tools.xml" selected="1" top="21" codecName="Default"/>
- </Files>
+ <Files/>
  <ARMCrossStudioWindow activeProject="gzll_ack_payload_device_pca10040" fileDialogDefaultFilter="*.c" autoConnectTarget="J-Link" buildConfiguration="Release" sessionSettings="" debugSearchFileMap="" fileDialogInitialDirectory="" debugSearchPath="" autoConnectCapabilities="3199"/>
 </session>

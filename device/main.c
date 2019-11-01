@@ -1,7 +1,7 @@
 /*
  * @Author: Ekko
  * @Date: 2019-10-31 16:08:58
- * @LastEditTime: 2019-10-31 16:08:59
+ * @LastEditTime: 2019-11-01 13:52:26
  * @Description: 
  */
 /**
@@ -145,11 +145,11 @@ static void output_present(uint8_t val)
     {
         if (val & (1 << i))
         {
-            bsp_board_led_on(i);
+            bsp_board_led_off(i);
         }
         else
         {
-            bsp_board_led_off(i);
+            bsp_board_led_on(i);
         }
     }
 }
@@ -191,11 +191,12 @@ static void ui_init(void)
  *
  * @details If an ACK was received, another packet is sent.
  */
+uint16_t disconnect_time = 0;
 void  nrf_gzll_device_tx_success(uint32_t pipe, nrf_gzll_device_tx_info_t tx_info)
 {
     bool     result_value         = false;
     uint32_t m_ack_payload_length = NRF_GZLL_CONST_MAX_PAYLOAD_LENGTH;
-
+	disconnect_time = 0;
     if (tx_info.payload_received_in_ack)
     {
         // Pop packet and write first byte of the payload to the GPIO port.
@@ -311,7 +312,7 @@ int main()
     bool result_value = nrf_gzll_init(NRF_GZLL_MODE_DEVICE);
     GAZELLE_ERROR_CODE_CHECK(result_value);
 	LCD_P8x16Str(0,0,"  This is device"); 
-    LCD_P8x16Str(0,5,"                  "); 
+     
     // Attempt sending every packet up to MAX_TX_ATTEMPTS times.
     nrf_gzll_set_max_tx_attempts(MAX_TX_ATTEMPTS);
 
@@ -342,9 +343,15 @@ int main()
     GAZELLE_ERROR_CODE_CHECK(result_value);
     
     NRF_LOG_INFO("Gzll ack payload device example started.");
-
     while (true)
     {
+		
+		if(disconnect_time < 1000)
+			LCD_P8x16Str(0,5," Connect Success  ");
+		else
+			LCD_P8x16Str(0,5," Connect Fail     ");
+		
+		disconnect_time++;
         NRF_LOG_FLUSH();
         __WFE();
 

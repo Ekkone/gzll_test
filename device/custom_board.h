@@ -1,7 +1,7 @@
 /*
  * @Author: Ekko
  * @Date: 2019-10-31 15:00:28
- * @LastEditTime: 2019-10-31 15:00:29
+ * @LastEditTime: 2019-10-31 17:48:54
  * @Description: 
  */
 /**
@@ -55,12 +55,12 @@ extern "C" {
 // LEDs definitions for PCA10040
 #define LEDS_NUMBER    4
 
-#define LED_START      16
-#define LED_1          16
-#define LED_2          17
-#define LED_3          18
-#define LED_4          19
-#define LED_STOP       19
+#define LED_START      17
+#define LED_1          17
+#define LED_2          18
+#define LED_3          19
+#define LED_4          20
+#define LED_STOP       20
 
 #define LEDS_ACTIVE_STATE 0
 

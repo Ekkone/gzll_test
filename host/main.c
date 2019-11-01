@@ -1,7 +1,7 @@
 /*
  * @Author: Ekko
  * @Date: 2019-10-30 22:38:22
- * @LastEditTime: 2019-10-31 16:14:54
+ * @LastEditTime: 2019-11-01 13:52:01
  * @Description: 
  */
 /**
@@ -145,11 +145,11 @@ static void output_present(uint8_t val)
     {
         if (val & (1 << i))
         {
-            bsp_board_led_on(i);
+            bsp_board_led_off(i);
         }
         else
         {
-            bsp_board_led_off(i);
+            bsp_board_led_on(i);
         }
     }
 }
@@ -191,10 +191,11 @@ static void ui_init(void)
  *
  * @details If a data packet was received, the first byte is written to LEDS.
  */
+uint16_t disconnect_time = 0;
 void nrf_gzll_host_rx_data_ready(uint32_t pipe, nrf_gzll_host_rx_info_t rx_info)
 {
     uint32_t data_payload_length = NRF_GZLL_CONST_MAX_PAYLOAD_LENGTH;
-
+	disconnect_time = 0;
     // Pop packet and write first byte of the payload to the GPIO port.
     bool result_value = nrf_gzll_fetch_packet_from_rx_fifo(pipe,
                                                            m_data_payload,
@@ -281,53 +282,6 @@ static bool front_end_control_setup(void)
 void uart_error_handle() {
 
 }
-void in_pin_handler(nrf_drv_gpiote_pin_t pin,nrf_gpiote_polarity_t action) {
-	nrf_delay_ms(300);
-	if(pin == KEY1)
-		LED_Toggle(LED_1);
-	else if(pin == KEY2)
-		LED_Toggle(LED_2);
-	else if(pin == KEY3)
-		LED_Toggle(LED_3);
-	else if(pin == KEY4)
-		LED_Toggle(LED_4);
-	nrf_delay_ms(20);
-
-}
-void Gpiote_Init(void) {
-	//GPIOE驱动初始化
-	uint32_t err_code = nrf_drv_gpiote_init();
-	APP_ERROR_CHECK(err_code);
-	//配置SENSE模式,选择false为PORT事件
-	nrf_drv_gpiote_in_config_t in_config = GPIOTE_CONFIG_IN_SENSE_HITOLO(true);
-	in_config.pull = NRF_GPIO_PIN_PULLUP;
-	//配置按键1绑定PORT
-	err_code = nrf_drv_gpiote_in_init(KEY1,&in_config,in_pin_handler);
-	APP_ERROR_CHECK(err_code);
-	//设置GPIOE输入事件使能
-	nrfx_gpiote_in_event_enable(KEY1,true);
-	//配置按键2绑定PORT
-	err_code = nrf_drv_gpiote_in_init(KEY2,&in_config,in_pin_handler);
-	APP_ERROR_CHECK(err_code);
-	//设置GPIOE输入事件使能
-	nrfx_gpiote_in_event_enable(KEY2,true);
-	//配置按键3绑定PORT
-	err_code = nrf_drv_gpiote_in_init(KEY3,&in_config,in_pin_handler);
-	APP_ERROR_CHECK(err_code);
-	//设置GPIOE输入事件使能
-	nrfx_gpiote_in_event_enable(KEY3,true);
-	//配置按键4绑定PORT
-	err_code = nrf_drv_gpiote_in_init(KEY4,&in_config,in_pin_handler);
-	APP_ERROR_CHECK(err_code);
-	//设置GPIOE输入事件使能
-	nrfx_gpiote_in_event_enable(KEY4,true);
-
-	//输出任务
-	// nrf_drv_gpiote_out_config_t out_config = GPIOTE_CONFIG_OUT_TASK_TOGGLE(true);
-	// err_code = nrfx_gpiote_out_init(LED_1,&out_config);
-	// APP_ERROR_CHECK(err_code);
-	// nrfx_gpiote_out_task_enable(LED_1);
-}
 /*****************************************************************************/
 /**
  * @brief Main function.
@@ -380,13 +334,13 @@ int main()
     while (true)
     {
         NRF_LOG_FLUSH();
-        // if(Touch_Press()) {
-		// 	LED_Open(LED_1);
-		// 	LED_Open(LED_2);
-		// 	LED_Open(LED_3);
-		// 	LED_Open(LED_4);
-		// }
         __WFE();
+		if(disconnect_time < 1000)
+			LCD_P8x16Str(0,5," Connect Success  ");
+		else
+			LCD_P8x16Str(0,5," Connect Fail     ");
+		
+		disconnect_time++;
 
 #if GZLL_PA_LNA_CONTROL
         if (m_packets_cnt >= 1000)
