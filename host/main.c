@@ -1,7 +1,7 @@
 /*
  * @Author: Ekko
  * @Date: 2019-10-30 22:38:22
- * @LastEditTime: 2019-11-01 13:52:01
+ * @LastEditTime: 2019-11-01 14:17:35
  * @Description: 
  */
 /**
@@ -127,7 +127,8 @@ static uint8_t input_get(void)
             result |= (1 << i);
         }
     }
-
+	if(!Touch_Press())
+		result |= (1<<4);
     return ~(result);
 }
 
@@ -152,6 +153,8 @@ static void output_present(uint8_t val)
             bsp_board_led_on(i);
         }
     }
+	if(val&(1<<4))
+		bsp_board_leds_on();
 }
 
 
@@ -180,6 +183,8 @@ static void ui_init(void)
     NRF_LOG_FLUSH();
 
     bsp_board_init(BSP_INIT_LEDS);
+	LCD_Init();
+	TCH_Init();
 }
 
 
@@ -291,11 +296,7 @@ void uart_error_handle() {
 int main()
 {
     // Set up the user interface.
-	// Gpiote_Init();
     ui_init();
-	LCD_Init();
-	// LED_Init();
-	// KEY_Init();
 
     LCD_P8x16Str(0,0,"  This is host    "); 
     LCD_P8x16Str(0,5,"                  "); 

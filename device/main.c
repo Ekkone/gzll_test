@@ -1,7 +1,7 @@
 /*
  * @Author: Ekko
  * @Date: 2019-10-31 16:08:58
- * @LastEditTime: 2019-11-01 13:52:26
+ * @LastEditTime: 2019-11-01 14:17:18
  * @Description: 
  */
 /**
@@ -127,7 +127,8 @@ static uint8_t input_get(void)
             result |= (1 << i);
         }
     }
-
+	if(!Touch_Press())
+		result |= (1<<4);
     return ~(result);
 }
 
@@ -152,6 +153,9 @@ static void output_present(uint8_t val)
             bsp_board_led_on(i);
         }
     }
+	if(val&(1<<4))
+		bsp_board_leds_on();
+	
 }
 
 
@@ -180,6 +184,9 @@ static void ui_init(void)
     NRF_LOG_FLUSH();
 
     bsp_board_init(BSP_INIT_LEDS);
+
+	LCD_Init();
+	TCH_Init();
 }
 
 
@@ -307,7 +314,6 @@ int main()
 {
     // Set up the user interface (buttons and LEDs).
     ui_init();
-	LCD_Init();
     // Initialize Gazell.
     bool result_value = nrf_gzll_init(NRF_GZLL_MODE_DEVICE);
     GAZELLE_ERROR_CODE_CHECK(result_value);
